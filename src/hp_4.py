@@ -35,7 +35,7 @@ def add_date_range(values, start_date):
     in the returned list."""
     dates_list=[]
     for i,value in enumerate(values):
-        dates_list.append(datetime.strptime(start_date,"%Y-%m-%d")  + timedelta(days=z))
+        dates_list.append(datetime.strptime(start_date,"%Y-%m-%d")  + timedelta(days=i))
     return list(zip(dates_list,values)) 
 
 
